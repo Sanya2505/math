@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="level">
+        <p>Выбрать уровень задания</p>
+        <select class="select" name="" id="">
+          <option value="easy">Легкий (от 1 до 10)</option>
+          <option value="medium">Средний (от 1 до 20)</option>
+          <option value="hard">Тяжелый (от 1 до 30)</option>
+        </select>
+      </div>
+      <p>Нажми на кнопку и получи задание</p>
+      <div class="div__btn">
+        <button class="btn__sum">Сложить</button>
+        <button class="btn__min">Вычесть</button>
+        <button class="btn__multiply">Умножить</button>
+        <button class="btn__divide">Разделить</button>
+        <button class="btn__cleane">Сбросить</button>
+      </div>
+      <div class="result"></div>
+      <div class="div__btn">
+        <button class="btn__stat">Посмотреть статистику</button>
+      </div>
+      <div class="modal modal__hidden">
+        <button class="modal__btn">X</button>
+        <p>Статистика ответов:</p>
+        <p class="correc__answer"></p>
+        <p class="error__answer"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./functionNew.js"></script>
+  </body>
+</html>
