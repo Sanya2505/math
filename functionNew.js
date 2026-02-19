@@ -76,20 +76,28 @@ function chekResult(a, b, operator) {
       error++;
       divResult.innerHTML = "Твой результат в статистике";
     }
+    container.classList.add("container__modal");
+    modal.classList.remove("modal__hidden");
+    correctAnswer.innerHTML = "";
+    errorAnswer.innerHTML = "";
+    correctAnswer.append(`Верный ответ: ${correct}`);
+    errorAnswer.append(`Неверный ответ: ${error}`);
+    statAdd();
   });
 }
 
 btnStat.addEventListener("click", () => {
-  container.classList.add("container__modal");
-  modal.classList.remove("modal__hidden");
-  correctAnswer.innerHTML = "";
-  errorAnswer.innerHTML = "";
-  correctAnswer.append(`Верный ответ: ${correct}`);
-  errorAnswer.append(`Неверный ответ: ${error}`);
+  statAdd();
+  function statAdd() {
+    modal.classList.remove("modal__hidden");
+    correctAnswer.innerHTML = "";
+    errorAnswer.innerHTML = "";
+    correctAnswer.append(`Верный ответ: ${correct}`);
+    errorAnswer.append(`Неверный ответ: ${error}`);
+  }
 });
 
 modalClose.addEventListener("click", () => {
-  container.classList.remove("container__modal");
   modal.classList.add("modal__hidden");
 });
 
