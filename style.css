@@ -16,9 +16,6 @@
   padding: 30px;
   margin: 30px;
 }
-.container__modal {
-  margin-top: 300px;
-}
 .level {
   display: flex;
   justify-content: center;
@@ -45,14 +42,14 @@
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
-  width: 400px;
+  width: 250px;
   height: 200px;
   border-radius: 10px;
   padding-left: 20px;
   position: fixed;
-  top: 20%;
+  /* top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   background-color: rgb(255, 255, 255);
 }
 .modal__hidden {
